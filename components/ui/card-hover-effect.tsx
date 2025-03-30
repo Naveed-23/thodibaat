@@ -16,7 +16,7 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div className={cn("grid grid-cols-1 sm:grid-cols-2 px-8 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10", className)}>
