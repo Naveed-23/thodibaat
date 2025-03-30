@@ -25,7 +25,7 @@ export default function HeroSectionOne() {
           transition={{ duration: 0.3, delay: 0.8 }}
           className="relative z-10 max-w-xl py-4 text-lg font-normal text-neutral-500"
         >
-          An app Made in{<FlipWords words={words} />}, designed for India by Indians, showcasing
+          An app <b className="text-black opacity-75">Proudly Made in{<FlipWords words={words} />}</b>, designed for India by Indians, showcasing
           local talent and innovation, promoting self-reliance, and celebrating
           Indian digital craftsmanship.
         </motion.p>
@@ -36,7 +36,7 @@ export default function HeroSectionOne() {
           transition={{ duration: 0.3, delay: 1 }}
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <button className="w-60 transform rounded-lg cursor-pointer bg-purple-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-purple-700">
+          <button className="w-60 transform rounded-lg cursor-pointer bg-blue-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700">
             Join the Waitlist
           </button>
           <button className="w-60 transform rounded-lg border border-gray-300 cursor-pointer bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100">
@@ -52,7 +52,7 @@ export default function HeroSectionOne() {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="relative mt-10 w-full max-w-xs lg:mt-0 lg:max-w-sm"
       >
-        <div className="mt-28 w-full overflow-hidden rounded-xl border border-b-12 border-8 border-gray-800 shadow-lg">
+        <div className="mt-36 w-full overflow-hidden rounded-xl border border-b-12 border-8 border-gray-800 shadow-lg">
           <Image
             src="/phone.jpeg"
             alt="Landing page preview"
@@ -72,7 +72,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-4 backdrop-blur-lg">
       <div className="flex items-center gap-3">
-        <Image src="/Thodibaat_logo1.webp" alt="Logo" height={60} width={60} />
+        <Image src="/Thodibaat_logo1.webp" alt="Logo" height={100} width={100} />
         <h1 className="text-lg font-bold md:text-2xl"></h1>
       </div>
       <div className="flex items-center gap-4">
@@ -88,7 +88,7 @@ const Navbar = () => {
         >
           FAQ
         </Link>
-        <button className="w-24 transform rounded-lg cursor-pointer bg-purple-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 md:w-32">
+        <button className="w-24 transform rounded-lg cursor-pointer bg-blue-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 md:w-32">
           Join now
         </button>
       </div>

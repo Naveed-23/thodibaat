@@ -8,7 +8,7 @@ import Footer from "@/components/Footer"
 export default function Home() {
   return (
     <div>
-      <div className="bg-gradient-to-b from-purple-300">
+      <div className="bg-gradient-to-b from-blue-400">
       <HeroSectionOne />
       </div>
       <CardHoverEffectDemo />
