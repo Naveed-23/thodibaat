@@ -52,7 +52,7 @@ export default function HeroSectionOne() {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="relative mt-10 w-full max-w-xs lg:mt-0 lg:max-w-sm"
       >
-        <div className="mt-36 w-full overflow-hidden rounded-xl border border-b-12 border-8 border-gray-800 shadow-lg">
+        <div className="mt-48 w-full overflow-hidden rounded-xl border border-b-12 border-8 border-gray-800 shadow-lg">
           <Image
             src="/phone.jpeg"
             alt="Landing page preview"
@@ -72,7 +72,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-4 backdrop-blur-lg">
       <div className="flex items-center gap-3">
-        <Image src="/Thodibaat_logo1.webp" alt="Logo" height={100} width={100} />
+        <Image src="/2.jpg" alt="Logo" height={200} width={300} />
         <h1 className="text-lg font-bold md:text-2xl"></h1>
       </div>
       <div className="flex items-center gap-4">
