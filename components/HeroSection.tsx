@@ -5,12 +5,10 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { FlipWords } from "./ui/flip-words";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { ThreeDMarquee } from "./ui/3d-marquee";
 
 export default function HeroSectionOne() {
     const words = ["India", "भारत", "Hindustan"];
     const title = "Thodibaat pe, har baat apno ke saath";
-    const image = ["/revolution.png"]
   
     return (
         <>

@@ -4,7 +4,7 @@ import { WobbleCardDemo } from "@/components/ui/WobbleCard";
 import Waitlist from "@/components/WaitList";
 import FAQ from "@/components/Faqs"
 import Footer from "@/components/Footer"
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (
