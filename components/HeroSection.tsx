@@ -5,25 +5,22 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { FlipWords } from "./ui/flip-words";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { ThreeDMarquee } from "./ui/3d-marquee";
 
 export default function HeroSectionOne() {
     const words = ["India", "भारत", "Hindustan"];
     const title = "Thodibaat pe, har baat apno ke saath";
+    const image = ["/revolution.png"]
   
     return (
+        <>
+        <div className="bg-yellow-500">
+
+        </div>
         <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-center px-6 md:px-12">
             <Navbar />
             
-            {/* Banner Image */}
-            <div className="w-full mt-28 flex justify-center">
-                <Image
-                    src="/1.jpg"
-                    alt="Banner"
-                    className="w-xl rounded-lg shadow-lg"
-                    height={80}
-                    width={300}
-                />
-            </div>
+            
             
             {/* Content Section */}
             <div className="flex flex-col lg:flex-row items-center justify-between w-full mt-10">
@@ -38,7 +35,7 @@ export default function HeroSectionOne() {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.3, delay: 0.8 }}
                         className="relative z-10 py-4 text-lg font-normal text-neutral-500"
-                    >
+                        >
                         An app <b className="text-black opacity-75">Proudly Made in {<FlipWords words={words} />}</b>, designed for India by Indians, showcasing
                         local talent and innovation, promoting self-reliance, and celebrating
                         Indian digital craftsmanship.
@@ -49,7 +46,7 @@ export default function HeroSectionOne() {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.3, delay: 1 }}
                         className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
-                    >
+                        >
                         <button className="w-60 transform rounded-lg cursor-pointer bg-blue-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700">
                             Join the Waitlist
                         </button>
@@ -64,8 +61,8 @@ export default function HeroSectionOne() {
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
-                    className="relative mt-10 w-full max-w-xs lg:mt-0 lg:max-w-sm"
-                >
+                    className="relative mt-10 w-full max-w-xs lg:mt-28 lg:max-w-sm"
+                    >
                     <div className="w-full overflow-hidden rounded-xl border border-b-12 border-8 border-gray-800 shadow-lg">
                         <Image
                             src="/phone.jpeg"
@@ -73,11 +70,12 @@ export default function HeroSectionOne() {
                             className="aspect-[9/18.5] h-auto w-full object-cover"
                             height={1000}
                             width={1000}
-                        />
+                            />
                     </div>
                 </motion.div>
             </div>
         </div>
+        </>
     );
 }
 
